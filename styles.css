@@ -1,15 +1,13 @@
 /* Class 11 · Step 4: the basics */
 :root {
+    /* Lab 11 · Task 5: Your own colors */
     --text: #e8e8e8;
     --text-muted: #9ca3af;
     --accent: #60a5fa;
     --background: #15171a;
-    /* --text: #1a1a1a;
-    --text-muted: #6b7280;
-    --accent: #2563eb;
-    --background: #ffffff;
-    --border: #e5e7eb; */
+    --border: #374151;
 }
+
 
 body {
     font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
@@ -32,3 +30,34 @@ h2 {
 }
 
 footer { margin-top: 4rem; color: var(--text-muted); font-size: 0.9rem; }
+
+li {
+    margin-bottom: 1rem;
+}
+
+/* Lab 11 · Task 4: links */
+a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+}
+
+a:hover { border-bottom-color: var(--accent); }
+/* .portrait {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+ul {
+    padding-left: 1.25rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+} */
