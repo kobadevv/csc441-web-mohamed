@@ -13,7 +13,7 @@ body {
     color: var(--text);
     background: var(--background);
     line-height: 1.6;
-    max-width: 90rem;
+    max-width: 75rem;
     margin: 0 auto;
     padding: 3rem 1.5rem;
 }
@@ -40,7 +40,11 @@ p {
     margin-bottom: 1rem;
 }
 
+/* Lab 14 · Task 4: footer stacks on narrow screens */
 footer { 
+    flex-direction: column;
+    gap: 0.5rem;
+
     margin-top: 4rem; 
     color: var(--text-muted); 
     font-size: 0.9rem; 
@@ -128,23 +132,47 @@ nav a:focus-visible {
 
 /* Class 14 · Step 2: the cards go in a row */
 .cards {
+    margin-top: 3rem; /* Lab 14 · Step 5: two fixes (fix overlapping photo on cards [wide screens])*/
     display: flex;
     /* Class 14 · Step 3: stack by default */
     flex-direction: column;
     gap: 1.5rem;
+    /* Lab 14 · Step 6: one layout choice of my own */
+    flex-wrap: wrap;
 }
 
 
 .card {
-    flex: 1;
+    flex: 1 1 18rem;
     padding: 1.5rem;
     border: 1px solid var(--border);
     border-radius: 8px;
 }
 
+/* Lab 14 · Task 1: the nav stacks on narrow screens */
+nav ul {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+
 /* Class 14 · Step 3: a row when there's room */
-@media (min-width: 40rem) {
+@media (min-width: 50rem) {
     .cards {
         flex-direction: row;
     }
+    nav ul {
+        flex-direction: row;
+        gap: 1.5rem;    
+    }
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
+
+/* Lab 14 · Step 5: two fixes (fix photo clipping)*/
+img { max-width: 100%; height: auto; }
