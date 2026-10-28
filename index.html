@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang = "en">
+   
     <head>
          <meta charset="UTF-8">
          <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +11,12 @@
          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
          <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
          <link rel="stylesheet" href="styles.css">
+         <!-- Class 15 - Step 1: my third file-->
+         <script src="script.js" defer>
+            
+         </script>
     </head>
+
     <body>
        <!-- Class 13 - Step 2: navigation -->
          <nav>
@@ -18,6 +24,8 @@
                 <li><a href="index.html" class = "current">Home</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="progress.html">Progress</a></li>
+                <!-- Class 15 - Step 3: the theme button -->
+                 <li><button id="theme-toggle" type="button">light</button></li>
             </ul>
          </nav>
          <!-- Class 11: Step 2: the page content -->
@@ -70,7 +78,8 @@
          
          <!-- Lab 12 · Task 3: two things in the footer -->
          <footer>
-            <p>© 2026 Mohamed Al-Koubah</p>
+            <!-- Class 15 - Step 2: the year, written by JavaScript -->
+            <p>© <span id="year"></span> Mohamed Al-Koubah</p>
             <!-- Lab 11 · Task 3: a link off my page -->
             <a href="https://github.com/kobadevv" target="_blank" rel="noopener">GitHub</a>
          </footer>
