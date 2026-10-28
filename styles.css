@@ -176,3 +176,11 @@ nav ul {
 
 /* Lab 14 · Step 5: two fixes (fix photo clipping)*/
 img { max-width: 100%; height: auto; }
+
+body.light {
+    --text: black;
+    --text-muted: gray;
+    --accent: royalblue;
+    --background: white;
+    --border: dimgray;
+}
