@@ -33,10 +33,23 @@ const currTime = new Date().getHours();
 
 const greeting = document.getElementById("greeting");
 
-if (currentHour < 12) {
+if (currTime < 12) {
     greeting.textContent = "Good Morning!";
-} else if (currentHour < 18) {
+} else if (currTime < 18) {
     greeting.textContent = "Good Afternoon!";
 } else {
     greeting.textContent = "Good Evening!";
 }
+
+// Class 16 - Step 4: handle the submit
+const contactForm = document.querySelector("#contact-form");
+const formStatus = document.querySelector("#form-status");
+
+contactForm.addEventListener("Submit", function(event) {
+    event.preventDefault()
+
+    const name = document.querySelector("#name").value;
+
+    formStatus.textContent = "Thanks,", name + ". Your message is to send.";
+    contactForm.reset();
+});
