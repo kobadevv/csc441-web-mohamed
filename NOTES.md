@@ -34,3 +34,27 @@ justify-content moves things along the main axis (horizontally by default) while
 hold the wide one, instead of the other way round?
 
 - This is by design as a mobile first or catered toward approach.
+
+## Week 10, Wednesday
+1. In your own words: what is the difference between HTML, CSS and
+JavaScript? One sentence each.
+
+- HTML is a markup language, it is not a programming language, it does compile code but rather from a set of rules displays them. CSS is a styling language and also not a programming language, it is used in conjunction with HTML to style how web pages display. JavaScript is a programming language which means that its main job is to execute instructions, algorithms, and change data.
+
+2. What does `defer` do on the script tag, and what breaks without it?
+
+- defer tells the browser to wait until the HTML has been fully loaded before running our script.js file. Without it the page immediately breaks and tries to interact with parts of the HTML that have not loaded.
+
+3. Light mode changed your whole site with five lines of CSS. Why did
+that work? What would you have had to do without variables?
+
+- It worked because applying a theme class to the body means applying to anything displayed since everything displayed on the page is contained within the body. Without CSS variables, you would have to one by one write new rules to change the values for every individual element of the page.
+
+4. Something went wrong this week and the Console said nothing at all.
+What was it, and how did you eventually find it?
+
+- The error happened when the theme failed to save and stay after refreshing, which showed no red error text in the Console. I eventually found it by running localStorage.getItem("theme") in the Console to see if my click was actually saving the choice. The save was blocked by browser, and it turned out to see it working I had to use the live server page.
+
+5. What is one thing on your page you don't know how to change yet?
+
+- Im not entirely sure how to properly or perfectly fix layout overlaps when using flex-wrap and flex-direction: column on more narrow screens.
