@@ -58,3 +58,27 @@ What was it, and how did you eventually find it?
 5. What is one thing on your page you don't know how to change yet?
 
 - Im not entirely sure how to properly or perfectly fix layout overlaps when using flex-wrap and flex-direction: column on more narrow screens.
+
+## Week 10, Friday
+1. What does event.preventDefault() do, and what happens without it?
+
+- event.preventDefault() stops the browser from automatically refreshing the page after submission. Without it, the page would instantly refresh, wiping out the success/error message before the user ever gets to read it.
+
+2. You got "Cannot read properties of null" in class. In your own
+words, why did it happen, and why did if fix it?
+
+- It happened because it attempts to search for the form on all pages, because of this it will return null on the pages where the form is not present. To fix this we make sure that the form returned is not null before proceeding.
+
+3. What rule did you write for your form, and why that rule?
+
+- I wrote a rule that checks if the message is at least 10 characters long because the HTML required attribute only checks that a field isn't empty; it will let a single space pass as valid. This rule will ensure the user types a meaningful message.
+
+4. The two things you found and fixed at phone width.
+
+- First: The button: The original padding kept the button shorter than 44px tall, to fix this the padding has been changed to 1rem 1.5rem. 
+- Second: The nav: The nav links were too short to nicely tap on a phone screen. Added display: inline-block and added 0.5rem of top padding.
+
+5. Your form does not actually send anything anywhere yet. What do
+you think is missing?
+
+- We are missing a server or back-end service to process the form data and send it/compose an email to me.
