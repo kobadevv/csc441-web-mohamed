@@ -33,10 +33,60 @@ const currTime = new Date().getHours();
 
 const greeting = document.getElementById("greeting");
 
-if (currentHour < 12) {
+if (currTime < 12) {
     greeting.textContent = "Good Morning!";
-} else if (currentHour < 18) {
+} else if (currTime < 18) {
     greeting.textContent = "Good Afternoon!";
 } else {
     greeting.textContent = "Good Evening!";
+}
+
+// Class 16 - Step 4: handle the submit
+const contactForm = document.querySelector("#contact-form");
+
+
+if (contactForm) {
+
+    // Lab 16 · Task 4: remember a draft (read back on load)
+    if (localStorage.getItem("formName"))
+        document.querySelector("#name").value = localStorage.getItem("formName");
+
+    if (localStorage.getItem("formEmail"))
+        document.querySelector("#email").value = localStorage.getItem("formEmail");
+
+    if (localStorage.getItem("formMessage"))
+        document.querySelector("#message").value = localStorage.getItem("formMessage");
+
+    const formStatus = document.querySelector("#form-status");
+
+    // Lab 16 · Task 1: my own check before accepting it
+    contactForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const name = document.querySelector("#name").value.trim();
+        const message = document.querySelector("#message").value.trim();
+        
+        if (message.length < 10) {
+            formStatus.textContent = "Please write a bit more, at least 10 characters.";
+            formStatus.classList.add("error");
+            return;
+        }
+        
+        formStatus.classList.remove("error");
+        formStatus.textContent = "Thanks, " + name + ". Your message is to send.";
+        contactForm.reset();
+    });
+
+    // Lab 16 · Task 2: clear the error once they start fixing it
+    contactForm.addEventListener("input", function () {
+        if (formStatus.classList.contains("error")) {
+            formStatus.textContent = "";
+            formStatus.classList.remove("error");
+        }
+
+        // Lab 16 · Task 4: remember a draft (localStorage set on input)
+        localStorage.setItem("formName", document.querySelector("#name").value);
+        localStorage.setItem("formEmail", document.querySelector("#email").value);
+        localStorage.setItem("formMessage", document.querySelector("#message").value);
+    });
 }
