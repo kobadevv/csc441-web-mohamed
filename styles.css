@@ -12,6 +12,7 @@
     --accent: #60a5fa;
     --background: #15171a;
     --border: #374151;
+    --error: lightsalmon;
 }
 
 body {
@@ -110,6 +111,10 @@ header {
 nav a {
     text-decoration: none;
     font-weight: 700;
+
+    /* Lab 16 Task 3: the form on a phone (increased button space/size) */
+    display: inline-block;
+    padding-top: 0.5rem;
     padding-bottom: 0.25rem;
     border-bottom: 2px solid transparent;
 }
@@ -209,7 +214,7 @@ form input, form textarea {
 }
 
 form input:focus, form textarea:focus {
-    outline: 2px solid var (--accent);
+    outline: 2px solid var(--accent);
     outline-offset: 1px;
 }
 
@@ -220,11 +225,18 @@ form button {
     background: var(--accent);
     border: none;
     border-radius: 6px;
-    padding: 0.5rem 1.5rem;
+
+    /* Lab 16 Task 3: the form on a phone (increased button size to 44px minimum) */
+    padding: 1rem 1.5rem;
     cursor: pointer;
 }
 
 #form-status {
     font-weight: 700;
     color: var(--accent);
+}
+
+/* Lab 16 · Task 1: the error state */
+#form-status.error {
+    color: var(--error);
 }
