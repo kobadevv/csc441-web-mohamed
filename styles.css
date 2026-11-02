@@ -1,3 +1,9 @@
+
+/* Class 16 - Step 3: padding counts inside width, not on top of it */
+* {
+    box-sizing: border-box;
+}
+
 /* Class 11 · Step 4: the basics */
 :root {
     /* Lab 11 · Task 5: Your own colors */
@@ -6,6 +12,7 @@
     --accent: #60a5fa;
     --background: #15171a;
     --border: #374151;
+    --error: lightsalmon;
 }
 
 body {
@@ -13,7 +20,7 @@ body {
     color: var(--text);
     background: var(--background);
     line-height: 1.6;
-    max-width: 75rem;
+    max-width: 90rem;
     margin: 0 auto;
     padding: 3rem 1.5rem;
 }
@@ -104,6 +111,10 @@ header {
 nav a {
     text-decoration: none;
     font-weight: 700;
+
+    /* Lab 16 Task 3: the form on a phone (increased button space/size) */
+    display: inline-block;
+    padding-top: 0.5rem;
     padding-bottom: 0.25rem;
     border-bottom: 2px solid transparent;
 }
@@ -183,4 +194,49 @@ body.light {
     --accent: royalblue;
     --background: white;
     --border: dimgray;
+}
+
+/* Class 16 - Step 3: the form */
+form label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+
+form input, form textarea {
+    font: inherit;
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--border);
+    scroll-padding-block-start: 6px;
+    background: var(--background);
+    color: var(--text)
+}
+
+form input:focus, form textarea:focus {
+    outline: 2px solid var(--accent);
+    outline-offset: 1px;
+}
+
+form button {
+    font: inherit;
+    font-weight: 700;
+    color: var(--background);
+    background: var(--accent);
+    border: none;
+    border-radius: 6px;
+
+    /* Lab 16 Task 3: the form on a phone (increased button size to 44px minimum) */
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+}
+
+#form-status {
+    font-weight: 700;
+    color: var(--accent);
+}
+
+/* Lab 16 · Task 1: the error state */
+#form-status.error {
+    color: var(--error);
 }
