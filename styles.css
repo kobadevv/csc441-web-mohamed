@@ -20,7 +20,7 @@ body {
     color: var(--text);
     background: var(--background);
     line-height: 1.6;
-    max-width: 90rem;
+    max-width: 75rem;
     margin: 0 auto;
     padding: 3rem 1.5rem;
 }
