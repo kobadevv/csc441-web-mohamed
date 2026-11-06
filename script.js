@@ -74,7 +74,7 @@ if (contactForm) {
         
         formStatus.classList.remove("error");
         formStatus.textContent = "Thanks, " + name + ". Your message is to send.";
-        contactForm.reset();
+        contactForm.submit();
     });
 
     // Lab 16 · Task 2: clear the error once they start fixing it
