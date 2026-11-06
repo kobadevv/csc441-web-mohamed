@@ -73,7 +73,7 @@ if (contactForm) {
         }
         
         formStatus.classList.remove("error");
-        formStatus.textContent = "Thanks, " + name + ". Your message is to send.";
+        formStatus.textContent = "Thanks, " + name + ". Sending your message.";
         contactForm.submit();
     });
 
