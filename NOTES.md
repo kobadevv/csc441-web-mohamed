@@ -84,5 +84,20 @@ you think is missing?
 - We are missing a server or back-end service to process the form data and send it/compose an email to me.
 
 ## Week 11, Wednesday
-- Live Site: [text](https://mohamedalkoubah.netlify.app/)
+- Live Site: [Click for blast off!](https://mohamedalkoubah.netlify.app/)
 
+1. In your own words: what does Github do, and what does Netlify do?
+
+- Github is a cloud platform using git version control, where you store project files or metadata that you want to track and update as you develop. Netlify is a web hosting platform, that continuously updates our websites as we push and update our github repos.
+
+2. You are about to merge into development and your live site will not change. Why?
+
+- Because the live site only shows changes that have been published to the release branch.
+
+3. What does the padlock in the address bar actually mean?
+
+- The padlock in the address bar tells the user that they are using HTTPS and that the established connection is encrypted.
+
+4. Your repository is public and now your site is too. Is there anything in your repo you would not hand to a stranger?
+
+- Not that I am aware of, throughout this project I have done my best to be careful as not to put out any sensitive or revealing information on pushes, commits, our websites, etc.
