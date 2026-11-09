@@ -65,13 +65,13 @@ if (contactForm) {
 
         const name = document.querySelector("#name").value.trim();
         const message = document.querySelector("#message").value.trim();
-        
+
         if (message.length < 10) {
             formStatus.textContent = "Please write a bit more, at least 10 characters.";
             formStatus.classList.add("error");
             return;
         }
-        
+
         formStatus.classList.remove("error");
         formStatus.textContent = "Thanks, " + name + ". Sending your message.";
         contactForm.submit();
