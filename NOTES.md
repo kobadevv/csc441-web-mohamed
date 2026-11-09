@@ -101,3 +101,35 @@ you think is missing?
 4. Your repository is public and now your site is too. Is there anything in your repo you would not hand to a stranger?
 
 - Not that I am aware of, throughout this project I have done my best to be careful as not to put out any sensitive or revealing information on pushes, commits, our websites, etc.
+
+## Week 11, Friday
+1. Your form has a hidden field nobody can see. Explain what it is
+for, and why it works better than asking people to prove they
+are human.
+
+- The hidden field is a bot-field, it is used to prevent bot submissions. it works better than asking people to prove they are human because it is a passive feature and does not require the use of asking people to complete (at times) infuriating captchas.
+
+2. What is a Deploy Preview, and when would you actually use one?
+
+- A deploy preview is a preview/live test of a specific pull request of a branch. You would use it to test a website/app version without looking through changes and code and mentally "test" everything.
+
+3. The two things you found and fixed on a real phone.
+
+- First: I increased the gap under nav ul from 0.5rem to 1rem to increase tap target.
+
+- Second: To prevent any sideway scrolling I added "overflow-wrap: break-word;" (DISCLOSURE: I could not find any issues really to fix from the list and sideways scrolling was not really and issue for me; however, I got this line from AI which said that this would break text by moving it to the next line to ensure fit and no horizontal scrolling).
+
+4. Describe the path a change takes from your laptop to the public,
+naming every branch it passes through.
+
+- A change goes from my local work repo, usually beginning on a seperate branch (e.g. w11_fri_lab18). The changes get added to this local branch and then commited and pushed to the remote repository, connecting the worked branch to origin (remote repo) if it has not done so. From there, it goes to the remote version of that same branch and then that branch is merged into development. From development those changes are then merged into release when all changes are completed (for that branch).
+
+5. Your site now has two addresses, the netlify.app one and your
+own domain. Why do both still work?
+
+- Both still work because we set a CNAME within our custom domains host dns records that redirects results to our netlify address.
+
+6. Your site is on the internet now. What is one thing you want to
+add before the end of the semester?
+
+- I want to go back and make some changes to the nav menu probably. A classmate brought up a popdown menu so I may try and implement that.

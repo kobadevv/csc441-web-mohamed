@@ -1,4 +1,3 @@
-
 /* Class 16 - Step 3: padding counts inside width, not on top of it */
 * {
     box-sizing: border-box;
@@ -23,15 +22,22 @@ body {
     max-width: 75rem;
     margin: 0 auto;
     padding: 3rem 1.5rem;
+    /* Lab 18 - Task 6: Fixing two things (prevent horizontal scrolling along mobile) */
+    overflow-wrap: break-word;
 }
 
-h1 { 
-    font-size: 3rem; /* Class 12 · Step 2: my own scale */
+h1 {
+    font-size: 3rem;
+    /* Class 12 · Step 2: my own scale */
     line-height: 1.1;
-    margin-bottom: 0.25rem; 
+    margin-bottom: 0.25rem;
 }
 
-header p { color: var(--text-muted); font-size: 1.1rem; margin-top: 0; }
+header p {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    margin-top: 0;
+}
 
 h2 {
     font-size: 1.75rem;
@@ -42,19 +48,19 @@ h2 {
     margin-bottom: 1rem;
 }
 
-p { 
-    font-size: 1.05rem; 
+p {
+    font-size: 1.05rem;
     margin-bottom: 1rem;
 }
 
 /* Lab 14 · Task 4: footer stacks on narrow screens */
-footer { 
+footer {
     flex-direction: column;
     gap: 0.5rem;
 
-    margin-top: 4rem; 
-    color: var(--text-muted); 
-    font-size: 0.9rem; 
+    margin-top: 4rem;
+    color: var(--text-muted);
+    font-size: 0.9rem;
 
     /* Lab 12 · Task 3: footer */
     border-top: 1px solid var(--border);
@@ -72,7 +78,9 @@ a {
     border-bottom: 1px solid transparent;
 }
 
-a:hover { border-bottom-color: var(--accent); }
+a:hover {
+    border-bottom-color: var(--accent);
+}
 
 .portrait {
     width: 180px;
@@ -137,13 +145,14 @@ nav {
 }
 
 /* Lab 13 - Task 5: one (styling) thing of my own */
-nav a:focus-visible { 
-    outline: 2px solid var(--accent); 
+nav a:focus-visible {
+    outline: 2px solid var(--accent);
 }
 
 /* Class 14 · Step 2: the cards go in a row */
 .cards {
-    margin-top: 3rem; /* Lab 14 · Step 5: two fixes (fix overlapping photo on cards [wide screens])*/
+    margin-top: 3rem;
+    /* Lab 14 · Step 5: two fixes (fix overlapping photo on cards [wide screens])*/
     display: flex;
     /* Class 14 · Step 3: stack by default */
     flex-direction: column;
@@ -166,7 +175,8 @@ nav ul {
     padding-left: 0;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    /* Lab 18 - Task 6: Fixing two things (increased gap along nav links) */
+    gap: 1rem; 
     margin-bottom: 2rem;
 }
 
@@ -175,11 +185,13 @@ nav ul {
     .cards {
         flex-direction: row;
     }
+
     nav ul {
         flex-direction: row;
-        gap: 1.5rem;    
+        gap: 1.5rem;
         align-items: center;
     }
+
     footer {
         flex-direction: row;
         justify-content: space-between;
@@ -187,7 +199,10 @@ nav ul {
 }
 
 /* Lab 14 · Step 5: two fixes (fix photo clipping)*/
-img { max-width: 100%; height: auto; }
+img {
+    max-width: 100%;
+    height: auto;
+}
 
 body.light {
     --text: black;
@@ -204,7 +219,8 @@ form label {
     margin-bottom: 0.25rem;
 }
 
-form input, form textarea {
+form input,
+form textarea {
     font: inherit;
     width: 100%;
     padding: 0.5rem;
@@ -214,7 +230,8 @@ form input, form textarea {
     color: var(--text)
 }
 
-form input:focus, form textarea:focus {
+form input:focus,
+form textarea:focus {
     outline: 2px solid var(--accent);
     outline-offset: 1px;
 }
