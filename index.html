@@ -1,94 +1,101 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
 
-    <head>
-         <meta charset="UTF-8">
-         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-         <title>Mohamed Al-Koubah</title>
-         <link rel="icon" href="images/me.jpg"> <!-- icon to remove "favicon.ico" error -->
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Mohamed Al-Koubah</title>
+   <link rel="icon" href="images/me.jpg"> <!-- icon to remove "favicon.ico" error -->
 
-         <!-- Class 12 · Step 1: a typeface I chose -->
-         <link rel="preconnect" href="https://fonts.googleapis.com">
-         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-         <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
-         <link rel="stylesheet" href="styles.css">
-         <!-- Class 15 - Step 1: my third file-->
-         <script src="script.js" defer>
-            
-         </script>
-    </head>
+   <!-- Class 12 · Step 1: a typeface I chose -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="styles.css">
+   <!-- Class 15 - Step 1: my third file-->
+   <script src="script.js" defer>
 
-    <body>
-       <!-- Class 13 - Step 2: navigation -->
-         <nav>
-            <ul>
-               <li><a href="index.html" class = "current">Home</a></li>
-               <li><a href="projects.html">Projects</a></li>
-               <li><a href="progress.html">Progress</a></li>
-               <li><a href="contact.html">Contact</a></li>
-               <!-- Class 15 - Step 3: the theme button -->
-               <li><button id="theme-toggle" type="button">Light</button></li>
-            </ul>
-         </nav>
-         <!-- Class 11: Step 2: the page content -->
-         <header>
-            <!-- Class 12: Step 3: an image -->
-            <img src="images/me.jpg" alt="Portrait of Mohamed Al-Koubah." class="portrait">
-            <!-- Lab 12 · Task 1: group the text so it stacks beside the photo -->
-            <div>
-               <!-- Lab 15 - Step 5: one more thing that reacts (dynamic greeting!) -->
-               <span id="greeting"></span> 
-               <h1>Mohamed Al-Koubah</h1>
-               <p>Computer science student at Le Moyne College.</p>
-            </div>
-            
-         </header>
+   </script>
+</head>
 
-         <main>
+<body>
+   <!-- Class 13 - Step 2: navigation -->
+   <nav>
+      <ul>
+         <li><a href="index.html" class="current">Home</a></li>
+         <li><a href="projects.html">Projects</a></li>
+         <li><a href="progress.html">Progress</a></li>
+         <li><a href="contact.html">Contact</a></li>
+         <!-- Class 15 - Step 3: the theme button -->
+         <li><button id="theme-toggle" type="button">Light</button></li>
+      </ul>
+   </nav>
+   <!-- Class 11: Step 2: the page content -->
+   <header>
+      <!-- Class 12: Step 3: an image -->
+      <img src="images/me.jpg" alt="Portrait of Mohamed Al-Koubah." class="portrait">
+      <!-- Lab 12 · Task 1: group the text so it stacks beside the photo -->
+      <div>
+         <!-- Lab 15 - Step 5: one more thing that reacts (dynamic greeting!) -->
+         <span id="greeting"></span>
+         <h1>Mohamed Al-Koubah</h1>
+         <p>Computer science student at Le Moyne College.</p>
+      </div>
 
-            <section>
-               <h2>About</h2>
-               <!-- Lab 17 - Task 3: something I can see -->
-               <p>***This page has been live since November 4th, 2026.***</p>
-               <p>I am 19, I like tech (if that is not clear yet), snowboarding, & I find languages interesting.
-                  I am not exactly sure what else to put in this bio as of this moment...
-               </p>
-            </section>
-            
-            <section>
-               <h2>What I've built</h2>
-               <ul>
-                  <li>An Android app in Kotlin and Jetpack Compose (Language Log - csc441-android-mohamed on github)</li>
-                  <li>Kotlin practice (learning new kotlin specific methods among other things - csc441-mohamed on github)</li>
-               </ul>
-            </section>
-            
-            <!-- Lab 11 · Task 2: a third section */ -->
-            <section>
-               <h2>Near Future Goals</h2>
-               <ul>
-                  <li>
-                     I'm currently learning Japanese independently, I aim to be an intermediate level speaker within the next year or so.
-                     I studied French in middleschool and highschool so I want to refamiliarize myself with that language as well. 
-                     Lastly (language wise), I wish to broaden my knowledge and vocabulary when it comes to my mother tongue (Arabic) despite being a native/fluent speaker.
-                  </li>
+   </header>
 
-                  <li>
-                     I also wish to get back into game development and by extension learn how to draw.
-                     Over the years I have infrequently dabbled in game development to varying extenses, but I hope to stick with it this time.
-                     I want to learn how to draw partly because of this and partly because I used to love drawing (although I can't say if I was ever any good) as well as art class throughout school.
-                  </li>
-               </ul>
-            </section>
+   <main>
 
-         </main>
-         
-         <!-- Lab 12 · Task 3: two things in the footer -->
-         <footer>
-            <!-- Class 15 - Step 2: the year, written by JavaScript -->
-            <p>© <span id="year"></span> Mohamed Al-Koubah</p>
-            <!-- Lab 11 · Task 3: a link off my page -->
-            <a href="https://github.com/kobadevv" target="_blank" rel="noopener">GitHub</a>
-         </footer>
-   </body>
+      <section>
+         <h2>About</h2>
+         <!-- Lab 17 - Task 3: something I can see -->
+         <p>***This page has been live since November 4th, 2026.***</p>
+         <p>I am 19, I like tech (if that is not clear yet), snowboarding, & I find languages interesting.
+            I am not exactly sure what else to put in this bio as of this moment...
+         </p>
+      </section>
+
+      <section>
+         <h2>What I've built</h2>
+         <ul>
+            <li>An Android app in Kotlin and Jetpack Compose (Language Log - csc441-android-mohamed on github)</li>
+            <li>Kotlin practice (learning new kotlin specific methods among other things - csc441-mohamed on github)
+            </li>
+         </ul>
+      </section>
+
+      <!-- Lab 11 · Task 2: a third section */ -->
+      <section>
+         <h2>Near Future Goals</h2>
+         <ul>
+            <li>
+               I'm currently learning Japanese independently, I aim to be an intermediate level speaker within the next
+               year or so.
+               I studied French in middleschool and highschool so I want to refamiliarize myself with that language as
+               well.
+               Lastly (language wise), I wish to broaden my knowledge and vocabulary when it comes to my mother tongue
+               (Arabic) despite being a native/fluent speaker.
+            </li>
+
+            <li>
+               I also wish to get back into game development and by extension learn how to draw.
+               Over the years I have infrequently dabbled in game development to varying extenses, but I hope to stick
+               with it this time.
+               I want to learn how to draw partly because of this and partly because I used to love drawing (although I
+               can't say if I was ever any good) as well as art class throughout school.
+            </li>
+         </ul>
+      </section>
+
+   </main>
+
+   <!-- Lab 12 · Task 3: two things in the footer -->
+   <footer>
+      <!-- Class 15 - Step 2: the year, written by JavaScript -->
+      <p>© <span id="year"></span> Mohamed Al-Koubah</p>
+      <!-- Lab 11 · Task 3: a link off my page -->
+      <a href="https://github.com/kobadevv" target="_blank" rel="noopener">GitHub</a>
+   </footer>
+</body>
+
 </html>
