@@ -133,3 +133,24 @@ own domain. Why do both still work?
 add before the end of the semester?
 
 - I want to go back and make some changes to the nav menu probably. A classmate brought up a popdown menu so I may try and implement that.
+
+## Week 12, Wednesday, Lab 19
+1. In your own words, what is stored in a database table?
+
+- a database table contains sets of data defined as some sort of value (e.g strings, integers, etc).
+
+2. What is the difference between a table and an API endpoint?
+
+- a table is a container and the makeup of its respective data sets, while an API endpoint is the interface from which we interact with this table.
+
+3. What does GET do? What format did your endpoint return?
+
+- GET queries a value within the database table. The endpoint returned the data in JSON format.
+
+4. Why do we use a publishable key, not a secret key?
+
+- Since this is going to be in public view we do not use a secret key to prevent abuse and unauthorized access (e.g anybody besides us).
+
+5. What changed when select=* became select=title,category?
+
+- The change is that "select=*" queried all column data while "select=title,category" queried only the title and category.
