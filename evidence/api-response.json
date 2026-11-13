@@ -1,0 +1,86 @@
+[
+    {
+        "id": 1,
+        "title": "Photography",
+        "description": "I like taking photos outdoors.",
+        "category": "Creative",
+        "image_url": null,
+        "created_at": "2026-11-11T22:45:56.827461+00:00"
+    },
+    {
+        "id": 2,
+        "title": "Reading",
+        "description": "I enjoy science fiction and mysteries.",
+        "category": "Learning",
+        "image_url": null,
+        "created_at": "2026-11-11T22:45:56.827461+00:00"
+    },
+    {
+        "id": 3,
+        "title": "Hiking",
+        "description": "I explore local trails on weekends.",
+        "category": "Outdoors",
+        "image_url": null,
+        "created_at": "2026-11-11T22:45:56.827461+00:00"
+    },
+    {
+        "id": 1,
+        "title": "Sushi",
+        "description": "One of my favorite foods",
+        "category": "Japanese",
+        "image_url": null,
+        "created_at": "2026-11-11T22:45:56.827461+00:00"
+    },
+    {
+        "id": 9,
+        "title": "Hamburgers",
+        "description": "A classic all-time pick",
+        "category": "American",
+        "image_url": null,
+        "created_at": "2026-11-13T21:31:56.880804+00:00"
+    },
+    {
+        "id": 10,
+        "title": "Tacos",
+        "description": "A good choice for when things need to be changed up",
+        "category": "Mexican",
+        "image_url": null,
+        "created_at": "2026-11-13T21:32:44.518372+00:00"
+    },
+    {
+        "id": 11,
+        "title": "Gyros",
+        "description": "A great mix of mediterranean flavor!",
+        "category": "Mediterranean",
+        "image_url": null,
+        "created_at": "2026-11-13T21:35:39.020186+00:00"
+    },
+    {
+        "id": 12,
+        "title": "Shawarma",
+        "description": "A staple for me growing up",
+        "category": "Mediterranean",
+        "image_url": null,
+        "created_at": "2026-11-13T21:35:47.013868+00:00"
+    },
+    {
+        "title": "Sushi",
+        "category": "Japanese"
+    },
+    {
+        "title": "Hamburgers",
+        "category": "American"
+    },
+    {
+        "title": "Tacos",
+        "category": "Mexican"
+    },
+    {
+        "title": "Gyros",
+        "category": "Mediterranean"
+    },
+    {
+        "title": "Shawarma",
+        "category": "Mediterranean"
+    }
+]
