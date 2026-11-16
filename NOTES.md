@@ -154,3 +154,24 @@ add before the end of the semester?
 5. What changed when select=* became select=title,category?
 
 - The change is that "select=*" queried all column data while "select=title,category" queried only the title and category.
+
+## Week 12, Friday — Lab 20
+1. What does fetch() send and what does response.json() return?
+
+- "fetch()" sends a HTTP request to the api to query for certain data, "response.json()" gives the data back as requested.
+
+2. Why does the page use textContent instead of innerHTML?
+
+- Using innerHTML would allow our user to execute commands which we do not want to authorize them to do.
+
+3. What happens when Supabase returns an empty list?
+
+- No cards are created and the status texts display "No items yet." and "0 items"
+
+4. How does the page behave when the network fails?
+
+- No table data populates our screen and it says "Could not load the items. Check the Console." under the refresh button. Since we are offline the refresh button naturally does not work and just redisplays the same message.
+
+5. What is the proof that a card is NOT hardcoded in HTML?
+
+- Clicking the refresh button upon API changes updates our page instantly without having to push any new code.
